@@ -13,7 +13,7 @@ const Login = () => {
             </Head>
 
             <div className="flex flex-col absolute z-50 h-4/6 w-4/5 rounded-[2.5rem] items-center justify-center space-y-16 bg-transparent backdrop-blur-md">
-                <h1 className="text-white text-5xl font-bold">Welcome to the METAVERSE</h1>
+                <h1 className="text-white text-5xl font-bold">Enter the METAVERSE</h1>
 
                 <button
                     onClick={authenticate}
