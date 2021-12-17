@@ -11,3 +11,10 @@
   font-family: liquidcrystal;
   letter-spacing: 2px;
 }
+
+.bg-image {
+  background-image: url("https://www.msi.com/Landing/creator-awards/uploads/images/1fec1378bf868ac4a86b5fefc0876f76.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
