@@ -19,12 +19,12 @@ const SendMessage = ({ endOfMessagesRef }) => {
             ethAddress: user.get("ethAddress")
         })
             .then(
-                () => {
-                    setMessage("");
-                    endOfMessagesRef.current.scrollIntoView({ behavior: "smooth" });
-                },
+                () => { },
                 (error) => console.log(error.message)
             )
+
+        endOfMessagesRef.current.scrollIntoView({ behavior: "smooth" });
+        setMessage("");
     }
 
     return (
@@ -32,7 +32,7 @@ const SendMessage = ({ endOfMessagesRef }) => {
             <input
                 type="text"
                 className="flex-grow outline-none bg-transparent text-white placeholder-gray-500 pr-5"
-                placeholder={`Enter a message, ${user.getUsername()}`}
+                placeholder={`Enter a message as ${user.getUsername()}`}
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
             />

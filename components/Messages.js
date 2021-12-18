@@ -3,6 +3,7 @@ import { ByMoralis, useMoralis, useMoralisQuery } from "react-moralis"
 import Message from "./Message";
 import SendMessage from "./SendMessage"
 
+// Only show messages from the last 24 hours
 const MIN_DURATION = 1440
 
 const Messages = () => {

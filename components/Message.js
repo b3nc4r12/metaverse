@@ -1,6 +1,6 @@
 import { useMoralis } from "react-moralis"
 import Avatar from "./Avatar"
-import Moment from "react-moment"
+import TimeAgo from "timeago-react"
 
 const Message = ({ message }) => {
     const { user } = useMoralis();
@@ -9,9 +9,10 @@ const Message = ({ message }) => {
 
     return (
         <div className={`flex items-end space-x-2 relative ${isUserMessage && "justify-end"}`}>
-            <Moment fromNow className={`text-xs text-white ${!isUserMessage && "order-last ml-2"}`}>
-                {message.get("createdAt")}
-            </Moment>
+            <TimeAgo
+                className={`text-xs text-white ${!isUserMessage && "order-last ml-2"}`}
+                datetime={message.createdAt}
+            />
             <div className={`relative h-8 w-8 ${isUserMessage && "order-last ml-2"}`}>
                 <Avatar username={message.get("username")} />
             </div>

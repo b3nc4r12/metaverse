@@ -1,7 +1,7 @@
 module.exports = {
   reactStrictMode: true,
   images: {
-    domains: ["www.msi.com", "avatars.dicebear.com", "images.creativemarket.com"]
+    domains: ["www.msi.com", "avatars.dicebear.com", "images.creativemarket.com", "uozi875yrpqu.usemoralis.com"]
   },
   env: {
     moralis_app_id: process.env.MORALIS_APP_ID,

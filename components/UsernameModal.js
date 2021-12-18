@@ -1,11 +1,11 @@
 import { Fragment, useRef, useState } from "react"
 import { Dialog, Transition } from "@headlessui/react"
 import { useRecoilState } from "recoil"
-import { modalState } from "../atoms/modalAtom"
+import { usernameModalState } from "../atoms/usernameModalAtom"
 import { useMoralis } from "react-moralis"
 
-const Modal = () => {
-    const [open, setOpen] = useRecoilState(modalState);
+const UsernameModal = () => {
+    const [open, setOpen] = useRecoilState(usernameModalState);
     const cancelButtonRef = useRef(null);
     const { setUserData } = useMoralis();
     const [username, setUsername] = useState("");
@@ -90,4 +90,4 @@ const Modal = () => {
     )
 }
 
-export default Modal
+export default UsernameModal

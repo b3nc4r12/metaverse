@@ -1,8 +1,8 @@
 import { useRecoilState } from "recoil"
-import { modalState } from "../atoms/modalAtom"
+import { usernameModalState } from "../atoms/usernameModalAtom"
 
 const ChangeUsername = () => {
-    const [open, setOpen] = useRecoilState(modalState);
+    const [open, setOpen] = useRecoilState(usernameModalState);
 
     return (
         <div className="text-sm hover:text-gray-300">

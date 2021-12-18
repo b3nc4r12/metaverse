@@ -26,11 +26,16 @@ const Header = () => {
                         <div className="relative h-48 w-48 lg:mx-auto border-8 border-white rounded-full">
                             <Avatar
                                 username={user.get("username")}
-                                logoutOnPress
+                                changePfpOnPress
                             />
                         </div>
-                        <h1 className="text-3xl">Welcome to the METAVERSE,</h1>
-                        <h2 className="text-5xl font-bold truncate">{user.get("username")}</h2>
+
+                        <h1 className="text-3xl">
+                            Welcome to the METAVERSE
+                        </h1>
+                        <h2 className="text-5xl font-bold truncate">
+                            {user.getUsername()}
+                        </h2>
                     </Fade>
 
                     <Fade right>
